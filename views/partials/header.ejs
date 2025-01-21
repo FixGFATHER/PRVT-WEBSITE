@@ -1,0 +1,16 @@
+<header class="main-header">
+  <nav>
+    <a href="/">Home</a>
+    <% if (currentUser) { %>
+      <a href="/documents">Dokumente</a>
+      <a href="/forum">Forum</a>
+      <a href="/messages">Nachrichten</a>
+      <a href="/feedback">Feedback</a>
+      <a href="/analytics">Statistiken</a>
+      <a href="/logout">Logout</a>
+    <% } else { %>
+      <a href="/login">Login</a>
+      <a href="/register">Registrieren</a>
+    <% } %>
+  </nav>
+</header>
