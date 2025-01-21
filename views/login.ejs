@@ -1,0 +1,21 @@
+<!-- views/login.ejs -->
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<div class="form-container">
+  <h2>Login</h2>
+  <% if (error) { %>
+    <div class="alert alert-error"><%= error %></div>
+  <% } %>
+  <form action="/login" method="POST">
+    <label for="username">Benutzername</label>
+    <input type="text" name="username" required />
+
+    <label for="password">Passwort</label>
+    <input type="password" name="password" required />
+
+    <button type="submit">Einloggen</button>
+  </form>
+</div>
+
+<%- include('partials/footer') %>
