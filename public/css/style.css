@@ -1,0 +1,91 @@
+:root {
+  --bg-color: #0f1a2a;
+  --card-color: #192b3e;
+  --text-color: #fff;
+  --accent-color: #4a90e2;
+  --border-radius: 8px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+
+.main-header {
+  background: var(--card-color);
+  padding: 1rem;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.main-header nav a {
+  color: var(--text-color);
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.main-header nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.form-container {
+  background: var(--card-color);
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 400px;
+  border-radius: var(--border-radius);
+}
+
+.form-container label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #333;
+  border-radius: var(--border-radius);
+  background: #0f1a2a;
+  color: var(--text-color);
+}
+
+.btn,
+button[type="submit"] {
+  background: var(--accent-color);
+  color: var(--text-color);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.btn:hover,
+button[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+.alert {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+}
+
+.alert-error {
+  background: #ff4a4a;
+  color: #fff;
+}
+
+.main-footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  opacity: 0.6;
+}
